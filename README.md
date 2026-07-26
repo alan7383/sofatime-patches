@@ -1,12 +1,23 @@
-# 👋🧩 Morphe Patches template
+# 🍿 Morphe Patches for SofaTime
 
-Template repository for Morphe Patches.
+Official repository containing custom Morphe patches for **SofaTime** (Android).
 
 ## ❓ About
 
-Patches for apps I like.
+This repository provides modular patches for the SofaTime Android application. The patches unlock all premium features and bypass license checks seamlessly across supported app versions.
 
-TODO: Update this about section with a brief introduction/summary about this repo and what it offers.
+### ✨ Features
+- **SofaTime Premium**: Unlocks all premium features, custom themes, and advanced tracking tools.
+- **SofaTime License Check Bypass**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
+
+> [!IMPORTANT]
+> **🔑 Authentication & Login Notice**
+> 
+> Due to Google Play Services signature verification (SHA-1 fingerprint mismatch on repackaged APKs), **Google Sign-In will not work**.
+> 
+> **How to log in:**
+> - Please use **Email & Password** login instead.
+> - **If your account is linked to Google**: Simply use the **"Forgot Password"** link on the login screen to set a password for your account email. You will then be able to log in using Email & Password without needing Google Sign-In!
 
 ## 🩹 Patches list
 
@@ -23,12 +34,22 @@ TODO: Update this about section with a brief introduction/summary about this rep
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
+| [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. | *None* |
+| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. | *None* |
 
 </details>
 
 <!-- PATCHES_END -->
+
+## 🧩 Patch Details
+
+### SofaTime License Check Bypass
+- **Description**: Bypasses PairIP and Google Play Store verification checks.
+- **Implementation**: Short-circuits license verification by injecting `return-void` into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forcing `LicenseContentProvider.onCreate()` to return `true` (`const/4 v0, 0x1`).
+
+### SofaTime Premium
+- **Description**: Unlocks all premium capabilities.
+- **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) directly into the Smali getters matching `isPremium`, `isPremiumPurchased`, and `isPurchased` (`PremiumEntitlement` & `PremiumState`), forcing all feature gates to evaluate as active.
 
 #### How to use these patches
 
@@ -38,9 +59,12 @@ Or manually add this repository url as a patch source in Morphe: https://github.
 
 ### 🛠️ Building
 
-To build UserXYZ Patches,
-you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
+To build SofaTime Patches locally, you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
+
+```bash
+./gradlew build
+```
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+SofaTime Patches are licensed under the [GNU General Public License v3.0](LICENSE).
