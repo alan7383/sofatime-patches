@@ -1,7 +1,8 @@
-rootProject.name = "morphe-patches-template"
+rootProject.name = "sofatime-patches"
 
 pluginManagement {
     repositories {
+        mavenLocal()
         gradlePluginPortal()
         google()
         maven {

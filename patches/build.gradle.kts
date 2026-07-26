@@ -1,14 +1,13 @@
-group = "app.template"
+group = "app.sofatime"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "SofaTime Patches"
+        description = "Unlocks premium features and bypasses license checks for SofaTime."
+        source = "https://github.com/alan7383/sofatime-patches"
+        author = "alan7383"
+        contact = "https://github.com/alan7383"
+        website = "https://github.com/alan7383/sofatime-patches"
         license = "GPLv3"
     }
 }
