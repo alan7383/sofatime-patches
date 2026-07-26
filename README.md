@@ -11,13 +11,11 @@ This repository provides modular patches for the SofaTime Android application. T
 - **SofaTime License Check Bypass**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
 
 > [!IMPORTANT]
-> **🔑 Authentication & Login Notice**
+> **⚠️ Backup & Login Notice**
 > 
-> Due to Google Play Services signature verification (SHA-1 fingerprint mismatch on repackaged APKs), **Google Sign-In will not work**.
-> 
-> **How to log in:**
-> - Please use **Email & Password** login instead.
-> - **If your account is linked to Google**: Simply use the **"Forgot Password"** link on the login screen to set a password for your account email. You will then be able to log in using Email & Password without needing Google Sign-In!
+> - **Backup your progress**: Please make sure to back up your watch data / export your progress (or sync your account) in the original SofaTime app before uninstalling it to install the patched version!
+> - **Google Sign-In**: Due to Google Play Services signature verification (SHA-1 fingerprint mismatch on repackaged APKs), **Google Sign-In will not work**.
+> - **How to log in**: Please use **Email & Password** login instead. If your account was originally created using Google Sign-In, simply use the **"Forgot Password"** link on the login screen to set a password for your Gmail/email address, enabling seamless login via Email & Password!
 
 ## 🩹 Patches list
 
