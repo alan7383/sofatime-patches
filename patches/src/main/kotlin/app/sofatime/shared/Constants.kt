@@ -8,7 +8,7 @@ object Constants {
     val SOFATIME_COMPATIBILITY = Compatibility(
         name = "SofaTime",
         packageName = "com.theclashsoft.sofatime",
-        apkFileType = ApkFileType.APK,
+        apkFileType = ApkFileType.APKM,
         appIconColor = 0x1E1E2E,
         targets = listOf(
             AppTarget(version = "1.1.2")

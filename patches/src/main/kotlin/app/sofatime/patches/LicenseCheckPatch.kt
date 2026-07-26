@@ -48,16 +48,5 @@ val licenseCheckPatch = bytecodePatch(
             """
         )
 
-        Fingerprint(
-            definingClass = "Lcom/pairip/application/Application;",
-            name = "attachBaseContext",
-            parameters = listOf("Landroid/content/Context;"),
-            returnType = "V"
-        ).method.addInstructions(
-            0,
-            """
-                return-void
-            """
-        )
     }
 }

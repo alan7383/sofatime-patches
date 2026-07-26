@@ -12,7 +12,7 @@
           "packageName": "com.theclashsoft.sofatime",
           "name": "SofaTime",
           "description": null,
-          "apkFileType": "APK",
+          "apkFileType": "APKM",
           "appIconColor": "#1E1E2E",
           "signatures": null,
           "targets": [
@@ -38,7 +38,7 @@
           "packageName": "com.theclashsoft.sofatime",
           "name": "SofaTime",
           "description": null,
-          "apkFileType": "APK",
+          "apkFileType": "APKM",
           "appIconColor": "#1E1E2E",
           "signatures": null,
           "targets": [
