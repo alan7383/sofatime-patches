@@ -2,9 +2,9 @@ package app.sofatime.patches
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.sofatime.fingerprints.premiumEntitlementBFingerprint
-import app.sofatime.fingerprints.premiumEntitlementCFingerprint
-import app.sofatime.fingerprints.premiumStateBFingerprint
+import app.sofatime.fingerprints.isPremiumFingerprint
+import app.sofatime.fingerprints.isPremiumPurchasedFingerprint
+import app.sofatime.fingerprints.isPurchasedFingerprint
 import app.sofatime.shared.Constants.SOFATIME_COMPATIBILITY
 
 @Suppress("unused")
@@ -16,7 +16,7 @@ val premiumPatch = bytecodePatch(
     compatibleWith(SOFATIME_COMPATIBILITY)
 
     execute {
-        premiumEntitlementBFingerprint.method.addInstructions(
+        isPremiumFingerprint.method.addInstructions(
             0,
             """
                 const/4 v0, 0x1
@@ -24,7 +24,7 @@ val premiumPatch = bytecodePatch(
             """
         )
 
-        premiumEntitlementCFingerprint.method.addInstructions(
+        isPremiumPurchasedFingerprint.method.addInstructions(
             0,
             """
                 const/4 v0, 0x1
@@ -32,7 +32,7 @@ val premiumPatch = bytecodePatch(
             """
         )
 
-        premiumStateBFingerprint.method.addInstructions(
+        isPurchasedFingerprint.method.addInstructions(
             0,
             """
                 const/4 v0, 0x1
