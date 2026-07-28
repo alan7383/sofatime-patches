@@ -31,6 +31,12 @@ jobs:
           node-version: 'lts/*'
           cache: 'npm'
 
+      - name: Configure Gradle Credentials
+        run: |
+          mkdir -p ~/.gradle
+          echo "gpr.user=alan7383" >> ~/.gradle/gradle.properties
+          echo "gpr.key=${{ secrets.READ_PACKAGES }}" >> ~/.gradle/gradle.properties
+
       - name: Install dependencies
         run: npm install
 
@@ -41,11 +47,6 @@ jobs:
         id: release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPR_USER: "alan7383"
-          GPR_KEY: ${{ secrets.READ_PACKAGES }}
-          READ_PACKAGES: ${{ secrets.READ_PACKAGES }}
-          ORG_GRADLE_PROJECT_gpr_user: "alan7383"
-          ORG_GRADLE_PROJECT_gpr_key: ${{ secrets.READ_PACKAGES }}
 
       - name: Attest
         if: steps.release.outputs.new_release_published == 'true'
@@ -60,9 +61,4 @@ jobs:
         if: steps.release.outputs.new_release_published != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GPR_USER: "alan7383"
-          GPR_KEY: ${{ secrets.READ_PACKAGES }}
-          READ_PACKAGES: ${{ secrets.READ_PACKAGES }}
-          ORG_GRADLE_PROJECT_gpr_user: "alan7383"
-          ORG_GRADLE_PROJECT_gpr_key: ${{ secrets.READ_PACKAGES }}
         run: ./gradlew :patches:buildAndroid clean --no-daemon
