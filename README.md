@@ -17,12 +17,12 @@ This repository provides modular patches for the SofaTime Android application. T
 > **Important:** Please back up your progress before installing or updating patched builds.
 > 
 > **How to back up and restore your data in SofaTime:**
-> 1. **Cloud Sync (Recommended - Automatic Full Sync)**:
+> 1. **Manual ZIP Backup (Highly Recommended - Safest Method)**:
+>    - **Export:** Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Export Sofa Time backup**. This creates a `.zip` archive containing your entire watch history, ratings, and custom lists. **Crucial: Move this `.zip` file to a safe location (e.g., Google Drive, PC) before uninstalling the app**, as local app files are deleted upon uninstallation.
+>    - **Restore:** Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Import Sofa Time backup**. Select your exported `.zip` (or `.json`) file to fully restore your library.
+> 2. **Cloud Sync (Automatic Full Sync)**:
 >    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
 >    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are automatically synced and restored upon login.
-> 2. **Full ZIP Backup & Restore (Local File)**:
->    - Full backups are exported and restored as **`.zip` archives** (`sofatime-automatic-backup-*.zip` or `sofa_time_export.zip`) containing your watch history (`watched.json`), watchlist (`watchlist.json`), ratings (`ratings.json`), and custom lists (`lists-lists.json`).
->    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Backups** to manage, export, or restore your `.zip` backups.
 > 3. **Raw Device Data Path (ADB / Root)**:
 >    - Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
 >    - On-device automatic backups: `/data/data/com.theclashsoft.sofatime/files/automatic-backups/`
