@@ -11,6 +11,14 @@ This repository provides modular patches for the SofaTime Android application. T
 - **SofaTime License Check Bypass**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
 - **SofaTime Google Sign-In Bypass**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
 
+> [!IMPORTANT]
+> **⚠️ Backup Notice**
+> 
+> - **Backup your progress**: Please make sure to back up your watch data or export/sync your account before installing or updating patched builds!
+> - **Exact App Data Location on Android (`com.theclashsoft.sofatime`)**:
+>   - **Database file** (`SofaTimeDatabase`): `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
+>   - **Shared Preferences & DataStore**: `/data/data/com.theclashsoft.sofatime/shared_prefs/` and `/data/data/com.theclashsoft.sofatime/files/datastore/`
+
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
