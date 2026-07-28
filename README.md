@@ -46,7 +46,7 @@ This repository provides modular patches for the SofaTime Android application. T
 - **Implementation**: Short-circuits license verification by injecting `return-void` into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forcing `LicenseContentProvider.onCreate()` to return `true` (`const/4 v0, 0x1`).
 
 ### SofaTime Premium
-- **Description**: Unlocks all premium capabilities.
+- **Description**: Unlocks all premium features.
 - **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) into the `PremiumEntitlement` Smali methods — `isPremium` (combined premium/trial check with `Instant.now()`) and `isPremiumPurchased` (purchase-only check) — forcing all premium feature gates to evaluate as active.
 
 #### How to use these patches
