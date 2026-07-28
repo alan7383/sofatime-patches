@@ -47,7 +47,7 @@ This repository provides modular patches for the SofaTime Android application. T
 
 ### SofaTime Premium
 - **Description**: Unlocks all premium capabilities.
-- **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) directly into the Smali getters matching `isPremium`, `isPremiumPurchased`, and `isPurchased` (`PremiumEntitlement` & `PremiumState`), forcing all feature gates to evaluate as active.
+- **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) into the `PremiumEntitlement` Smali methods — `isPremium` (combined premium/trial check with `Instant.now()`) and `isPremiumPurchased` (purchase-only check) — forcing all premium feature gates to evaluate as active.
 
 #### How to use these patches
 

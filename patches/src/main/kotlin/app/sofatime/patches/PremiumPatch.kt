@@ -9,7 +9,7 @@ import app.sofatime.shared.Constants.SOFATIME_COMPATIBILITY
 @Suppress("unused")
 val premiumPatch = bytecodePatch(
     name = "SofaTime Premium",
-    description = "Unlocks all premium features.",
+    description = "Unlocks all premium capabilities.",
     default = true,
 ) {
     compatibleWith(SOFATIME_COMPATIBILITY)
