@@ -26,8 +26,8 @@ val isPremiumPurchasedFingerprint = Fingerprint(
     returnType = "Z",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     parameters = emptyList(),
-    filters = listOf(
-        fieldAccess(opcode = Opcode.IGET_BOOLEAN),
-        fieldAccess(opcode = Opcode.IGET_BOOLEAN)
-    )
+    custom = custom@{ method, _ ->
+        val impl = method.implementation ?: return@custom false
+        !impl.instructions.any { it.opcode?.name?.startsWith("invoke") == true }
+    }
 )
