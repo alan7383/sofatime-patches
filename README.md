@@ -27,7 +27,7 @@ This repository provides modular patches for the SofaTime Android application. T
 
 **🎯 Supported versions:**
 
-| 1.1.2 |
+| 1.1.4 |
 | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
