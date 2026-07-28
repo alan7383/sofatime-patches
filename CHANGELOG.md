@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/alan7383/sofatime-patches/compare/v1.0.1...v1.1.0) (2026-07-28)
+
+### ✨ New Features
+
+* update patches for Sofatime v1.1.4 compatibility ([19a00c7](https://github.com/alan7383/sofatime-patches/commit/19a00c7380e6d3fb7fc3ae42013c120a4c9162db))
+
 ## [1.0.1](https://github.com/alan7383/sofatime-patches/compare/v1.0.0...v1.0.1) (2026-07-26)
 
 ### 🐛 Bug Fixes
