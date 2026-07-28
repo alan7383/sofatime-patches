@@ -12,21 +12,22 @@ This repository provides modular patches for the SofaTime Android application. T
 - **SofaTime Google Sign-In Bypass**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
 
 > [!IMPORTANT]
-> **⚠️ Backup & Data Export Notice**
+> **⚠️ Backup & Data Protection Notice**
 > 
-> **Important:** It is highly recommended to back up your watch data / progress in the original app before installing or applying any patches, just in case!
+> **Important:** It is highly recommended to back up your watch data and progress before installing or updating patched builds.
 > 
-> **How to export/backup your data in the SofaTime App:**
-> 1. **Via JSON Export**:
->    - Open SofaTime ➔ Navigate to the **Profile** tab in the bottom bar.
->    - Tap ⚙️ **Settings** ➔ Open **Data** (*"Backups, cache and destructive actions"*).
->    - Select **Save JSON file** to export your watch progress to your phone's storage.
-> 2. **Via Cloud Sync**:
->    - Open ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
->    - Ensure **Sofa Time Cloud** sync is enabled.
-> 3. **Raw Application Data Location (Root / ADB)**:
->    - SQLite Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
->    - Preferences & DataStore: `/data/data/com.theclashsoft.sofatime/shared_prefs/`
+> **How to back up your data in SofaTime:**
+> 1. **Cloud Sync (Recommended - Full Library Backup)**:
+>    - Open SofaTime ➔ Go to **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
+>    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are saved to the cloud.
+> 2. **JSON / PDF Export (Individual Lists)**:
+>    - Open SofaTime ➔ Go to **Lists** tab (or any watched/watchlist category).
+>    - Open the list ➔ Tap the **3 dots options menu (⋮)** in the top right corner.
+>    - Select **Save JSON file** (or **Save PDF file**) to export that list to phone storage.
+> 3. **Automatic On-Device Backups & Storage**:
+>    - Open ⚙️ **Settings** ➔ **Data** (*"Backups, cache and destructive actions"*).
+>    - Database location: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
+>    - On-device backups folder: `/data/data/com.theclashsoft.sofatime/files/automatic-backups/`
 
 ## 🩹 Patches list
 
