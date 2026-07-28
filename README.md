@@ -12,22 +12,20 @@ This repository provides modular patches for the SofaTime Android application. T
 - **SofaTime Google Sign-In Bypass**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
 
 > [!IMPORTANT]
-> **⚠️ Backup & Data Protection Notice**
+> **⚠️ Backup & Restore Instructions**
 > 
-> **Important:** It is highly recommended to back up your watch data and progress before installing or updating patched builds.
+> **Important:** Please back up your progress before installing or updating patched builds.
 > 
-> **How to back up your data in SofaTime:**
-> 1. **Cloud Sync (Recommended - Full Library Backup)**:
->    - Open SofaTime ➔ Go to **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
->    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are saved to the cloud.
-> 2. **JSON / PDF Export (Individual Lists)**:
->    - Open SofaTime ➔ Go to **Lists** tab (or any watched/watchlist category).
->    - Open the list ➔ Tap the **3 dots options menu (⋮)** in the top right corner.
->    - Select **Save JSON file** (or **Save PDF file**) to export that list to phone storage.
-> 3. **Automatic On-Device Backups & Storage**:
->    - Open ⚙️ **Settings** ➔ **Data** (*"Backups, cache and destructive actions"*).
->    - Database location: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
->    - On-device backups folder: `/data/data/com.theclashsoft.sofatime/files/automatic-backups/`
+> **How to back up and restore your data in SofaTime:**
+> 1. **Cloud Sync (Recommended - Automatic Full Sync)**:
+>    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
+>    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are automatically synced and restored upon login.
+> 2. **Full ZIP Backup & Restore (Local File)**:
+>    - Full backups are exported and restored as **`.zip` archives** (`sofatime-automatic-backup-*.zip` or `sofa_time_export.zip`) containing your watch history (`watched.json`), watchlist (`watchlist.json`), ratings (`ratings.json`), and custom lists (`lists-lists.json`).
+>    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Backups** to manage, export, or restore your `.zip` backups.
+> 3. **Raw Device Data Path (ADB / Root)**:
+>    - Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
+>    - On-device automatic backups: `/data/data/com.theclashsoft.sofatime/files/automatic-backups/`
 
 ## 🩹 Patches list
 
@@ -44,9 +42,9 @@ This repository provides modular patches for the SofaTime Android application. T
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In. |  |
+| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Restores Google Sign-In on repackaged APKs via embedded OAuth. |  |
 | [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium capabilities. |  |
+| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
 
 </details>
 
