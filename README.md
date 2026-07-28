@@ -30,7 +30,7 @@ This repository provides modular patches for the SofaTime Android application. T
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.0](https://github.com/alan7383/sofatime-patches/releases/tag/v1.2.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v1.2.1](https://github.com/alan7383/sofatime-patches/releases/tag/v1.2.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
 <details open>
 <summary>📦 SofaTime&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
@@ -42,9 +42,9 @@ This repository provides modular patches for the SofaTime Android application. T
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Restores Google Sign-In on repackaged APKs via embedded OAuth. |  |
+| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In. |  |
 | [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
+| [SofaTime Premium](#sofatime-premium) | Unlocks all premium capabilities. |  |
 
 </details>
 

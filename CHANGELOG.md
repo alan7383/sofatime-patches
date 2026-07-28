@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/alan7383/sofatime-patches/compare/v1.2.0...v1.2.1) (2026-07-28)
+
+### 🐛 Bug Fixes
+
+* update README to clarify ZIP backup archive export and restore format ([af0cc9b](https://github.com/alan7383/sofatime-patches/commit/af0cc9be8294a7bf64d9c92d495b2b591d0f03e6))
+* update README with verified backup UI instructions from Smali analysis ([be28afa](https://github.com/alan7383/sofatime-patches/commit/be28afad5abc5501abd627200fb96da9d9099003))
+
 ## [1.2.0](https://github.com/alan7383/sofatime-patches/compare/v1.1.0...v1.2.0) (2026-07-28)
 
 ### 🐛 Bug Fixes
