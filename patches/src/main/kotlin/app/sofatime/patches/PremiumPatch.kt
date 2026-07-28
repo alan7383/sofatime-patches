@@ -2,13 +2,12 @@ package app.sofatime.patches
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import app.sofatime.fingerprints.isPremiumFingerprint
-import app.sofatime.fingerprints.isPremiumPurchasedFingerprint
+
 import app.sofatime.shared.Constants.SOFATIME_COMPATIBILITY
 
 @Suppress("unused")
 val premiumPatch = bytecodePatch(
-    name = "SofaTime Premium",
+    name = "Unlock premium features",
     description = "Unlocks all premium capabilities.",
     default = true,
 ) {

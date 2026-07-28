@@ -7,9 +7,9 @@ Official repository containing custom Morphe patches for **SofaTime** (Android).
 This repository provides modular patches for the SofaTime Android application. The patches unlock all premium features, bypass license checks, and restore Google Sign-In capabilities seamlessly across supported app versions.
 
 ### ✨ Features
-- **SofaTime Premium**: Unlocks all premium features, custom themes, and advanced tracking tools.
-- **SofaTime License Check Bypass**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
-- **SofaTime Google Sign-In Bypass**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
+- **Unlock premium features**: Unlocks all premium features, custom themes, and advanced tracking tools.
+- **Bypass license check**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
+- **Bypass Google Sign-In**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
 
 > [!IMPORTANT]
 > **⚠️ Backup & Restore Instructions**
@@ -49,15 +49,15 @@ This repository provides modular patches for the SofaTime Android application. T
 
 ## 🧩 Patch Details
 
-### SofaTime Google Sign-In Bypass
+### Bypass Google Sign-In
 - **Description**: Restores Google Sign-In on repackaged APKs where Google Play Services SHA-1 verification fails.
 - **Implementation**: Hooks method `mp8.w` to delegate authentication to a precompiled Kotlin extension (`GoogleSignInHelper.kt`). Displays an in-app WebView OAuth flow against `https://accounts.google.com/o/oauth2/v2/auth`, captures the direct Google ID Token / Auth Code upon redirect to `https://tvsofa-3.firebaseapp.com/__/auth/handler`, and asynchronously resumes the Kotlin coroutine (`uk5` wrapper).
 
-### SofaTime License Check Bypass
+### Bypass license check
 - **Description**: Bypasses PairIP and Google Play Store verification checks.
 - **Implementation**: Short-circuits license verification by injecting `return-void` into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forcing `LicenseContentProvider.onCreate()` to return `true` (`const/4 v0, 0x1`).
 
-### SofaTime Premium
+### Unlock premium features
 - **Description**: Unlocks all premium features.
 - **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) into the `PremiumEntitlement` Smali methods — `isPremium` (combined premium/trial check with `Instant.now()`) and `isPremiumPurchased` (purchase-only check) — forcing all premium feature gates to evaluate as active.
 

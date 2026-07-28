@@ -1,4 +1,4 @@
-package app.sofatime.fingerprints
+package app.sofatime.patches
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.fieldAccess

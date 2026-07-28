@@ -7,7 +7,7 @@ import app.sofatime.shared.Constants.SOFATIME_COMPATIBILITY
 
 @Suppress("unused")
 val googleSignInPatch = bytecodePatch(
-    name = "SofaTime Google Sign-In Bypass",
+    name = "Bypass Google Sign-In",
     description = "Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In.",
 ) {
     compatibleWith(SOFATIME_COMPATIBILITY)
