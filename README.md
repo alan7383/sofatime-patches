@@ -1,30 +1,44 @@
-# 🍿 Morphe Patches for SofaTime
+<div align="center">
+    <img src="https://github.com/alan7383.png" width="120" style="border-radius: 50%;"/>
+    <h1>SofaTime Patches</h1>
+    <p><b>Unlock the full potential of your SofaTime app!</b></p>
+</div>
 
-Official repository containing custom Morphe patches for **SofaTime** (Android).
+Hey there! I created these custom Morphe patches for SofaTime mostly for my own personal use. They help me bypass license checks, restore Google Sign-In, and unlock premium features seamlessly. I'm sharing them here so you can enjoy a better experience too.
 
-## ❓ About
+Please keep in mind that I work on these in my free time, so I might not always be able to fix issues immediately. 
 
-This repository provides modular patches for the SofaTime Android application. The patches unlock all premium features, bypass license checks, and restore Google Sign-In capabilities seamlessly across supported app versions.
+<div align="center">
+    <br>
+    <a href="https://morphe.software/add-source?github=alan7383/sofatime-patches">
+        <img src="https://img.shields.io/badge/Add_to_Morphe-000000?style=for-the-badge&logo=android&logoColor=white" alt="Add to Morphe Manager"/>
+    </a>
+    <br><br>
+</div>
 
-### ✨ Features
-- **Unlock premium features**: Unlocks all premium features, custom themes, and advanced tracking tools.
-- **Bypass license check**: Bypasses PairIP / Google Play Store license verification, allowing side-loading and installation from custom APK sources.
-- **Bypass Google Sign-In**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
+## Features
+
+**Premium Unlocked**  
+Access all premium features, custom themes, and advanced tracking tools effortlessly.
+
+**License Check Bypassed**  
+Allows side-loading and installation from custom APK sources by bypassing PairIP and Google Play Store verification.
+
+**Google Sign-In Restored**  
+Brings back functional Google Sign-In on repackaged APKs by using a custom embedded OAuth flow.
 
 > [!IMPORTANT]
-> **⚠️ Backup & Restore Instructions**
+> **Backup your data first!**
 > 
-> **Important:** Please back up your progress before installing or updating patched builds.
+> Please back up your progress before installing or updating patched builds.
 > 
-> **How to back up and restore your data in SofaTime:**
-> 1. **Manual ZIP Backup (Highly Recommended - Safest Method)**:
->    - **Export:** Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Export Sofa Time backup**. This creates a `.zip` archive containing your entire watch history, ratings, and custom lists. **Crucial: Move this `.zip` file to a safe location (e.g., Google Drive, PC) before uninstalling the app**, as local app files are deleted upon uninstallation.
->    - **Restore:** Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Data** ➔ **Import Sofa Time backup**. Select your exported `.zip` (or `.json`) file to fully restore your library.
-> 2. **Cloud Sync (Automatic Full Sync)**:
->    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
->    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are automatically synced and restored upon login.
+> **How to back up:**
+> 
+> **Manual ZIP Backup (Safest)**: Open SofaTime > Profile > Settings > Data > **Export Sofa Time backup**. Keep this `.zip` safe! To restore, simply choose **Import Sofa Time backup**.
+> 
+> **Cloud Sync**: Ensure **Sofa Time Cloud** is connected in Settings > Sync.
 
-## 🩹 Patches list
+## Patches List
 
 <!-- PATCHES_START EXPANDED -->
 > **[v1.2.1](https://github.com/alan7383/sofatime-patches/releases/tag/v1.2.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
@@ -47,34 +61,35 @@ This repository provides modular patches for the SofaTime Android application. T
 
 <!-- PATCHES_END -->
 
-## 🧩 Patch Details
+## Patch Details
 
-### Bypass Google Sign-In
-- **Description**: Restores Google Sign-In on repackaged APKs where Google Play Services SHA-1 verification fails.
-- **Implementation**: Hooks method `mp8.w` to delegate authentication to a precompiled Kotlin extension (`GoogleSignInHelper.kt`). Displays an in-app WebView OAuth flow against `https://accounts.google.com/o/oauth2/v2/auth`, captures the direct Google ID Token / Auth Code upon redirect to `https://tvsofa-3.firebaseapp.com/__/auth/handler`, and asynchronously resumes the Kotlin coroutine (`uk5` wrapper).
+For those curious about how it works under the hood:
 
-### Bypass license check
-- **Description**: Bypasses PairIP and Google Play Store verification checks.
-- **Implementation**: Short-circuits license verification by injecting `return-void` into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forcing `LicenseContentProvider.onCreate()` to return `true` (`const/4 v0, 0x1`).
+**Bypass Google Sign-In**  
+Since repackaged APKs have a different signature, the standard Google Play Services SHA-1 verification fails. This patch bypasses the SHA-1 check by hooking method `mp8.w` to delegate authentication to a precompiled Kotlin extension (`GoogleSignInHelper.kt`). It displays an in-app WebView OAuth flow, captures the direct Google ID Token / Auth Code, and asynchronously resumes the Kotlin coroutine.
 
-### Unlock premium features
-- **Description**: Unlocks all premium features.
-- **Implementation**: Overrides the entitlement state checks by injecting `return true` (`const/4 v0, 0x1`) into the `PremiumEntitlement` Smali methods — `isPremium` (combined premium/trial check with `Instant.now()`) and `isPremiumPurchased` (purchase-only check) — forcing all premium feature gates to evaluate as active.
+**Bypass License Check**  
+Bypasses the strict PairIP anti-piracy and license checks. It short-circuits license verification by injecting void returns into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forces `LicenseContentProvider.onCreate()` to return true.
 
-#### How to use these patches
+**Unlock Premium Features**  
+Overrides the entitlement state checks by injecting `return true` into the `PremiumEntitlement` Smali methods (`isPremium` and `isPremiumPurchased`), forcing all premium feature gates to evaluate as active.
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=alan7383/sofatime-patches
+## How to use
 
-Or manually add this repository url as a patch source in Morphe: https://github.com/alan7383/sofatime-patches
+The easiest way is to add the source directly to Morphe:  
+[Click here to add it](https://morphe.software/add-source?github=alan7383/sofatime-patches)
 
-### 🛠️ Building
+Alternatively, you can manually add this repository URL as a patch source in Morphe:  
+`https://github.com/alan7383/sofatime-patches`
 
-To build SofaTime Patches locally, you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
+## Building locally
+
+If you want to build these patches yourself, check out the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
 
 ```bash
 ./gradlew build
 ```
 
-## 📜 License
+## License
 
 SofaTime Patches are licensed under the [GNU General Public License v3.0](LICENSE).
