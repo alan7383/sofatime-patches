@@ -12,19 +12,19 @@ This repository provides modular patches for the SofaTime Android application. T
 - **SofaTime Google Sign-In Bypass**: Restores functional Google Sign-In on repackaged APKs by using an in-app WebView OAuth flow to bypass Google Play Services SHA-1 signature checks.
 
 > [!IMPORTANT]
-> **⚠️ Backup Notice & Step-by-Step Instructions / Notice de Sauvegarde**
+> **⚠️ Backup & Data Export Notice**
 > 
-> **How to export/backup your data in the SofaTime App / Comment faire une sauvegarde dans l'application :**
-> 1. **Via JSON Export (Export Fichier)**:
->    - Open SofaTime ➔ Go to **Profile / Profil** tab (bottom bar).
->    - Tap ⚙️ **Settings / Paramètres** ➔ Open **Data / Données** (*"Backups, cache..."*).
->    - Choose **Save JSON File / Sauvegarder fichier JSON** to export your data to your phone storage.
-> 2. **Via Cloud Sync (Synchronisation Nuage)**:
->    - Open ⚙️ **Settings / Paramètres** ➔ **Sync / Synchronisation** (*"Manage Sofa Time Cloud..."*).
+> **How to export/backup your data in the SofaTime App:**
+> 1. **Via JSON Export**:
+>    - Open SofaTime ➔ Navigate to the **Profile** tab in the bottom bar.
+>    - Tap ⚙️ **Settings** ➔ Open **Data** (*"Backups, cache and destructive actions"*).
+>    - Select **Save JSON file** to export your watch progress to your phone's storage.
+> 2. **Via Cloud Sync**:
+>    - Open ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
 >    - Ensure **Sofa Time Cloud** sync is enabled.
-> 3. **Raw Device Location (Advanced / Accès direct fichiers)**:
->    - Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
->    - Shared Preferences: `/data/data/com.theclashsoft.sofatime/shared_prefs/`
+> 3. **Raw Application Data Location (Root / ADB)**:
+>    - SQLite Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
+>    - Preferences & DataStore: `/data/data/com.theclashsoft.sofatime/shared_prefs/`
 
 ## 🩹 Patches list
 
