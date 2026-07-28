@@ -42,7 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPR_USER: "alan7383"
-          GPR_KEY: ${{ secrets.READ_PACKAGES || secrets.GITHUB_TOKEN }}
+          GPR_KEY: ${{ secrets.READ_PACKAGES }}
 
       - name: Attest
         if: steps.release.outputs.new_release_published == 'true'
@@ -58,5 +58,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPR_USER: "alan7383"
-          GPR_KEY: ${{ secrets.READ_PACKAGES || secrets.GITHUB_TOKEN }}
+          GPR_KEY: ${{ secrets.READ_PACKAGES }}
         run: ./gradlew :patches:buildAndroid clean --no-daemon
