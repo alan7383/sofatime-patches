@@ -14,6 +14,8 @@ This repository provides modular patches for the SofaTime Android application. T
 > [!IMPORTANT]
 > **⚠️ Backup & Data Export Notice**
 > 
+> **Important:** It is highly recommended to back up your watch data / progress in the original app before installing or applying any patches, just in case!
+> 
 > **How to export/backup your data in the SofaTime App:**
 > 1. **Via JSON Export**:
 >    - Open SofaTime ➔ Navigate to the **Profile** tab in the bottom bar.
