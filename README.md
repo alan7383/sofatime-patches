@@ -23,9 +23,6 @@ This repository provides modular patches for the SofaTime Android application. T
 > 2. **Cloud Sync (Automatic Full Sync)**:
 >    - Open SofaTime ➔ **Profile** tab ➔ Tap ⚙️ **Settings** ➔ **Sync** (*"Manage Sofa Time Cloud..."*).
 >    - Ensure **Sofa Time Cloud** is connected so your watch history, ratings, and lists are automatically synced and restored upon login.
-> 3. **Raw Device Data Path (ADB / Root)**:
->    - Database: `/data/data/com.theclashsoft.sofatime/databases/sofa_time.db`
->    - On-device automatic backups: `/data/data/com.theclashsoft.sofatime/files/automatic-backups/`
 
 ## 🩹 Patches list
 
@@ -42,9 +39,9 @@ This repository provides modular patches for the SofaTime Android application. T
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In. |  |
+| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Restores Google Sign-In on repackaged APKs via embedded OAuth. |  |
 | [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium capabilities. |  |
+| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
 
 </details>
 
