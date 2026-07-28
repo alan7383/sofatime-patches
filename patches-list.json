@@ -1,7 +1,33 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "patches": [
+    {
+      "name": "SofaTime Google Sign-In Bypass",
+      "description": "Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.theclashsoft.sofatime",
+          "name": "SofaTime",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1E1E2E",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.1.4",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
     {
       "name": "SofaTime License Check Bypass",
       "description": "Bypasses PairIP license verification.",
@@ -30,7 +56,7 @@
     },
     {
       "name": "SofaTime Premium",
-      "description": "Unlocks all premium features.",
+      "description": "Unlocks all premium capabilities.",
       "default": true,
       "dependencies": [],
       "compatiblePackages": [

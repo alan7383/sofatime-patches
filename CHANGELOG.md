@@ -1,3 +1,17 @@
+## [1.2.0](https://github.com/alan7383/sofatime-patches/compare/v1.1.0...v1.2.0) (2026-07-28)
+
+### 🐛 Bug Fixes
+
+* add dependencyResolutionManagement and Gradle property env vars for READ_PACKAGES auth ([ac552ed](https://github.com/alan7383/sofatime-patches/commit/ac552ed6fadbfa488f43f29352867b659140861d))
+* authenticate MorpheApp GPR registry via READ_PACKAGES secret ([60dbdfd](https://github.com/alan7383/sofatime-patches/commit/60dbdfd687977896348b84c690d86ba9372a26d7))
+* configure GPR_USER as alan7383 for GitHub Package authentication ([d5f5a7f](https://github.com/alan7383/sofatime-patches/commit/d5f5a7ff22bb9befa6b03120dca32eafee2925e3))
+* inject gpr.user and gpr.key into ~/.gradle/gradle.properties per Morphe setup doc ([c231ed4](https://github.com/alan7383/sofatime-patches/commit/c231ed40de517a17a693237c10afb118bd848a94))
+* pass READ_PACKAGES secret correctly to Gradle for GPR authentication ([e7cd0a4](https://github.com/alan7383/sofatime-patches/commit/e7cd0a4f5309f8c63c33445f6e2e53cd026e85cb))
+
+### ✨ New Features
+
+* add Google Sign-In bypass patch with Kotlin extension ([949f28d](https://github.com/alan7383/sofatime-patches/commit/949f28d2a43d21b12942084e02dafe8863766de5))
+
 ## [1.1.0](https://github.com/alan7383/sofatime-patches/compare/v1.0.1...v1.1.0) (2026-07-28)
 
 ### ✨ New Features
