@@ -20,7 +20,7 @@ This repository provides modular patches for the SofaTime Android application. T
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.1](https://github.com/alan7383/sofatime-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.2](https://github.com/alan7383/sofatime-patches/releases/tag/v1.0.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
 <summary>📦 SofaTime&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -32,8 +32,8 @@ This repository provides modular patches for the SofaTime Android application. T
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. | *None* |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. | *None* |
+| [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
+| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
 
 </details>
 
