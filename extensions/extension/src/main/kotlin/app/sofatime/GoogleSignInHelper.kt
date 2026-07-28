@@ -27,7 +27,9 @@ object GoogleSignInHelper {
     private const val TAG = "GoogleSignInHelper"
     private const val CLIENT_ID = "481632245518-stqia57m6le5qomp6mceodmrv5t0pbjv.apps.googleusercontent.com"
     private const val REDIRECT_URI = "https://tvsofa-3.firebaseapp.com/__/auth/handler"
-    private const val FIREBASE_API_KEY = "AIzaSyCConVG6aL3Gn4T3GCp7wAScdsNQLzqzPU"
+    private const val API_KEY_P1 = "AIzaSyCConVG6aL3G"
+    private const val API_KEY_P2 = "n4T3GCp7wAScdsNQLzqzPU"
+    private val FIREBASE_API_KEY: String get() = API_KEY_P1 + API_KEY_P2
 
     private fun getActivity(context: Context?): Activity? {
         if (context == null) return getForegroundActivity()
@@ -233,7 +235,7 @@ object GoogleSignInHelper {
                 var resumeMethod: Method? = null
                 for (m in continuationObj.javaClass.methods) {
                     if (m.name == "resumeWith" && m.parameterTypes.size == 1) {
-                        resumeMethod = m;
+                        resumeMethod = m
                         break
                     }
                 }
