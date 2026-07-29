@@ -51,7 +51,7 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 
 **🎯 Supported versions:**
 
-| 1.1.4 |
+| 1.1.5 |
 | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
@@ -70,7 +70,7 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 For those curious about how it works under the hood:
 
 **Bypass Google Sign-In**  
-Since repackaged APKs have a different signature, the standard Google Play Services SHA-1 verification fails. This patch bypasses the SHA-1 check by hooking method `mp8.w` to delegate authentication to a precompiled Kotlin extension (`GoogleSignInHelper.kt`). It displays an in-app WebView OAuth flow, captures the direct Google ID Token / Auth Code, and asynchronously resumes the Kotlin coroutine.
+This patch bypasses the SHA-1 check by dynamically fingerprinting the Google Sign-In method (`googleSignInMethodFingerprint`) to delegate authentication to a precompiled Kotlin extension (`GoogleSignInHelper.kt`). It displays an in-app WebView OAuth flow, captures the direct Google ID Token / Auth Code, and asynchronously resumes the Kotlin coroutine by boxing the token into `kotlin.Result`.
 
 **Bypass License Check**  
 Bypasses the strict PairIP anti-piracy and license checks. It short-circuits license verification by injecting void returns into `LicenseClient.checkLicense()` and `initializeLicenseCheck()`, and forces `LicenseContentProvider.onCreate()` to return true.
