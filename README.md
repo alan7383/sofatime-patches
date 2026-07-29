@@ -44,7 +44,7 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 ## Patches List
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.3.0](https://github.com/alan7383/sofatime-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.3.1](https://github.com/alan7383/sofatime-patches/releases/tag/v1.3.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 SofaTime&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
