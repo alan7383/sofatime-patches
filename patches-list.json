@@ -1,9 +1,9 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "patches": [
     {
-      "name": "SofaTime Google Sign-In Bypass",
+      "name": "Bypass Google Sign-In",
       "description": "Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In.",
       "default": true,
       "dependencies": [],
@@ -29,34 +29,8 @@
       "options": []
     },
     {
-      "name": "SofaTime License Check Bypass",
+      "name": "Bypass license check",
       "description": "Bypasses PairIP license verification.",
-      "default": true,
-      "dependencies": [],
-      "compatiblePackages": [
-        {
-          "packageName": "com.theclashsoft.sofatime",
-          "name": "SofaTime",
-          "description": null,
-          "apkFileType": "APKM",
-          "appIconColor": "#1E1E2E",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "1.1.4",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "SofaTime Premium",
-      "description": "Unlocks all premium capabilities.",
       "default": true,
       "dependencies": [],
       "compatiblePackages": [
@@ -83,6 +57,32 @@
     {
       "name": "Disable telemetry",
       "description": "Disables Firebase Crashlytics, Sessions, and Analytics.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.theclashsoft.sofatime",
+          "name": "SofaTime",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1E1E2E",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.1.4",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock premium features",
+      "description": "Unlocks all premium capabilities.",
       "default": true,
       "dependencies": [],
       "compatiblePackages": [

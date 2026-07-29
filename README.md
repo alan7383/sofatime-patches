@@ -56,10 +56,10 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Restores Google Sign-In on repackaged APKs via embedded OAuth. |  |
-| [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
-| [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
-| [Disable Telemetry](#disable-telemetry) | Disables Firebase Crashlytics, Sessions, and Analytics. |  |
+| [Bypass Google Sign-In](#bypass-google-sign-in) | Bypasses SHA-1 check by using embedded WebView OAuth for Google Sign-In. |  |
+| [Bypass license check](#bypass-license-check) | Bypasses PairIP license verification. |  |
+| [Disable telemetry](#disable-telemetry) | Disables Firebase Crashlytics, Sessions, and Analytics. |  |
+| [Unlock premium features](#unlock-premium-features) | Unlocks all premium capabilities. |  |
 
 </details>
 

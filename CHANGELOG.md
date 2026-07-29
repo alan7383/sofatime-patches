@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/alan7383/sofatime-patches/compare/v1.2.1...v1.3.0) (2026-07-29)
+
+### ✨ New Features
+
+* add Disable Telemetry patch (Firebase Crashlytics + Sessions) ([4a620b5](https://github.com/alan7383/sofatime-patches/commit/4a620b52519c67b9cb37ce579a0a03b5fb973f9e))
+
 ## [1.2.1](https://github.com/alan7383/sofatime-patches/compare/v1.2.0...v1.2.1) (2026-07-28)
 
 ### 🐛 Bug Fixes
