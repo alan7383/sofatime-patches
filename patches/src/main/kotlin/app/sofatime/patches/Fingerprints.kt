@@ -31,3 +31,15 @@ val isPremiumPurchasedFingerprint = Fingerprint(
         !impl.instructions.any { it.opcode?.name?.startsWith("invoke") == true }
     }
 )
+
+val crashlyticsRegistrarGetComponents = Fingerprint(
+    definingClass = "Lcom/google/firebase/crashlytics/CrashlyticsRegistrar;",
+    name = "getComponents",
+    returnType = "Ljava/util/List;"
+)
+
+val sessionsRegistrarGetComponents = Fingerprint(
+    definingClass = "Lcom/google/firebase/sessions/FirebaseSessionsRegistrar;",
+    name = "getComponents",
+    returnType = "Ljava/util/List;"
+)

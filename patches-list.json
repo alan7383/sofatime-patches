@@ -79,6 +79,32 @@
         }
       ],
       "options": []
+    },
+    {
+      "name": "Disable telemetry",
+      "description": "Disables Firebase Crashlytics, Sessions, and Analytics.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.theclashsoft.sofatime",
+          "name": "SofaTime",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1E1E2E",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.1.4",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
     }
   ]
 }

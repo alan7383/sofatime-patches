@@ -27,6 +27,9 @@ Allows side-loading and installation from custom APK sources by bypassing PairIP
 **Google Sign-In Restored**  
 Brings back functional Google Sign-In on repackaged APKs by using a custom embedded OAuth flow.
 
+**Telemetry Disabled**  
+Blocks Firebase Crashlytics and Sessions at the component registration level, disabling all crash reporting and session tracking.
+
 > [!IMPORTANT]
 > **Backup your data first!**
 > 
@@ -41,9 +44,9 @@ Brings back functional Google Sign-In on repackaged APKs by using a custom embed
 ## Patches List
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.1](https://github.com/alan7383/sofatime-patches/releases/tag/v1.2.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v1.3.0](https://github.com/alan7383/sofatime-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
-<summary>📦 SofaTime&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
+<summary>📦 SofaTime&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -56,6 +59,7 @@ Brings back functional Google Sign-In on repackaged APKs by using a custom embed
 | [SofaTime Google Sign-In Bypass](#sofatime-google-sign-in-bypass) | Restores Google Sign-In on repackaged APKs via embedded OAuth. |  |
 | [SofaTime License Check Bypass](#sofatime-license-check-bypass) | Bypasses PairIP license verification. |  |
 | [SofaTime Premium](#sofatime-premium) | Unlocks all premium features. |  |
+| [Disable Telemetry](#disable-telemetry) | Disables Firebase Crashlytics, Sessions, and Analytics. |  |
 
 </details>
 
@@ -73,6 +77,9 @@ Bypasses the strict PairIP anti-piracy and license checks. It short-circuits lic
 
 **Unlock Premium Features**  
 Overrides the entitlement state checks by injecting `return true` into the `PremiumEntitlement` Smali methods (`isPremium` and `isPremiumPurchased`), forcing all premium feature gates to evaluate as active.
+
+**Disable Telemetry**  
+Blocks Firebase Crashlytics and Sessions by patching their `ComponentRegistrar.getComponents()` methods to return an empty list, preventing their Firebase components from ever being registered. This stops all crash reporting, session tracking, and any analytics bridging without affecting other Firebase services (Auth, Firestore, FCM).
 
 ## How to use
 
