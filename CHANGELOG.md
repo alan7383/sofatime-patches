@@ -1,3 +1,9 @@
+## [1.3.4](https://github.com/alan7383/sofatime-patches/compare/v1.3.3...v1.3.4) (2026-07-30)
+
+### 🐛 Bug Fixes
+
+* remove 1.1.5 target, only 1.1.6 supported ([60a7495](https://github.com/alan7383/sofatime-patches/commit/60a7495ad011f60197b1035bf2945a74d3018fda))
+
 ## [1.3.3](https://github.com/alan7383/sofatime-patches/compare/v1.3.2...v1.3.3) (2026-07-30)
 
 ### 🐛 Bug Fixes
