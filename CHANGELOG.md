@@ -1,3 +1,9 @@
+## [1.3.3](https://github.com/alan7383/sofatime-patches/compare/v1.3.2...v1.3.3) (2026-07-30)
+
+### 🐛 Bug Fixes
+
+* update obfuscated Result class names for 1.1.6 compatibility ([9f9cc0a](https://github.com/alan7383/sofatime-patches/commit/9f9cc0a7b1f96aadb611e43071d9d0face420f6c))
+
 ## [1.3.2](https://github.com/alan7383/sofatime-patches/compare/v1.3.1...v1.3.2) (2026-07-30)
 
 ### 🐛 Bug Fixes
