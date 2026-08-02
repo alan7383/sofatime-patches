@@ -33,7 +33,7 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 > [!IMPORTANT]
 > **Backup your data first!**
 > 
-> Please back up your progress before installing or updating patched builds.
+> Please back up your progress before installing or updating patched builds. Don't worry, your progress is normally already saved, this is just in case something goes wrong.
 > 
 > **How to back up:**
 > 
