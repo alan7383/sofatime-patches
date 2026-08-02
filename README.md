@@ -16,10 +16,6 @@ Please keep in mind that I work on these in my free time, so I might not always 
     <br><br>
 </div>
 
-## Support me
-
-If you enjoy these patches and want to support my work, you can buy me a coffee on [Ko-fi](https://ko-fi.com/alan7383). It means a lot, thanks!
-
 ## Features
 
 **Premium Unlocked**  
@@ -108,6 +104,10 @@ If you want to build these patches yourself, check out the [Morphe documentation
 ```bash
 ./gradlew build
 ```
+
+## Support me
+
+If you enjoy these patches and want to support my work, you can buy me a coffee on [Ko-fi](https://ko-fi.com/alan7383). It means a lot, thanks!
 
 ## License
 
