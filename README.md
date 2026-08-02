@@ -13,9 +13,6 @@ Please keep in mind that I work on these in my free time, so I might not always 
     <a href="https://morphe.software/add-source?github=alan7383/sofatime-patches">
         <img src="https://img.shields.io/badge/Add_to_Morphe-000000?style=for-the-badge&logo=android&logoColor=white" alt="Add to Morphe Manager"/>
     </a>
-    <a href="https://ko-fi.com/alan7383">
-        <img src="https://img.shields.io/badge/Support_me_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Support me on Ko-fi"/>
-    </a>
     <br><br>
 </div>
 
