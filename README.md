@@ -39,7 +39,7 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 > 
 > **Manual ZIP Backup (Safest)**: Open SofaTime > Profile > Settings > Data > **Export Sofa Time backup**. Keep this `.zip` safe! To restore, simply choose **Import Sofa Time backup**.
 > 
-> **Cloud Sync**: Ensure **Sofa Time Cloud** is connected in Settings > Sync.
+> **Cloud Sync**: Ensure **Sofa Time Cloud** is connected in Settings > Sync. To make sure your data is saved to the cloud, open Sync and tap **Sync from this device**, it sends your current data up to the cloud. Don't worry about the other buttons, **Sync from remote service** downloads the cloud data to your device and **Log out** just disconnects you.
 
 ## Patches List
 
