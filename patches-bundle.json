@@ -1,6 +1,6 @@
 {
-  "created_at": "2026-08-06T02:08:44",
-  "description": "## [1.4.0](https://github.com/alan7383/sofatime-patches/compare/v1.3.6...v1.4.0) (2026-08-06)\n\n### 🐛 Bug Fixes\n\n* remove pip cache option from setup-python ([35b8012](https://github.com/alan7383/sofatime-patches/commit/35b801242618e8292a02e7ce9d07907f6fe15f80))\n* Support SofaTime v1.2.2 (Fixes [#1](https://github.com/alan7383/sofatime-patches/issues/1)) ([4c3d882](https://github.com/alan7383/sofatime-patches/commit/4c3d882ee3d19afe1d7fc6db5710fbc3dbb65357))\n\n### ✨ New Features\n\n* add sofa time update checker script and github workflow ([2da0ae0](https://github.com/alan7383/sofatime-patches/commit/2da0ae0ae7655993ec7faaf04049b7dfbc0ea8d9))",
+  "created_at": "2026-08-06T02:17:55",
+  "description": "## [1.4.0](https://github.com/alan7383/sofatime-patches/compare/v1.3.6...v1.4.0) (2026-08-06)\n\n### 🐛 Bug Fixes\n\n* remove pip cache option from setup-python ([35b8012](https://github.com/alan7383/sofatime-patches/commit/35b801242618e8292a02e7ce9d07907f6fe15f80))\n* Support SofaTime v1.2.2 (Fixes [#1](https://github.com/alan7383/sofatime-patches/issues/1)) ([c7528f9](https://github.com/alan7383/sofatime-patches/commit/c7528f9f05d7c6cb3712d6387ec84a6b5bd31057))\n\n### ✨ New Features\n\n* add sofa time update checker script and github workflow ([2da0ae0](https://github.com/alan7383/sofatime-patches/commit/2da0ae0ae7655993ec7faaf04049b7dfbc0ea8d9))",
   "download_url": "https://github.com/alan7383/sofatime-patches/releases/download/v1.4.0/patches-1.4.0.mpp",
   "signature_download_url": "",
   "version": "1.4.0"
