@@ -51,8 +51,8 @@ Blocks Firebase Crashlytics and Sessions at the component registration level, di
 
 **🎯 Supported versions:**
 
-| 1.2.2 |
-| :---: |
+| 1.2.2 | 1.2.3 |
+| :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
