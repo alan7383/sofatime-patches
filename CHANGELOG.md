@@ -1,3 +1,9 @@
+## [1.5.3](https://github.com/alan7383/sofatime-patches/compare/v1.5.2...v1.5.3) (2026-09-30)
+
+### 🐛 Bug Fixes
+
+* Support SofaTime v1.4.0 and v1.4.1 (Fixes [#18](https://github.com/alan7383/sofatime-patches/issues/18), Fixes [#19](https://github.com/alan7383/sofatime-patches/issues/19)) ([57081aa](https://github.com/alan7383/sofatime-patches/commit/57081aa492de79b57669611aa77d0a762ee90b23))
+
 ## [1.5.2](https://github.com/alan7383/sofatime-patches/compare/v1.5.1...v1.5.2) (2026-09-30)
 
 ### 🐛 Bug Fixes
