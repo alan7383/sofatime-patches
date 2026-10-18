@@ -94,6 +94,9 @@ def patches_table(patches):
     return "\n".join(rows)
 
 
+ANY_VERSION = "Any version"
+
+
 def versions_table(targets):
     """Render a markdown table of supported versions.
     Experimental versions get a 🧪 prefix.
@@ -102,25 +105,26 @@ def versions_table(targets):
     if not targets:
         return ""
 
-    cells = []
+    columns = []
     for t in targets:
-        ver   = t["version"]
-        if ver is None:
-            continue
+        ver = t.get("version") or ANY_VERSION
         label = f"🧪&nbsp;{ver}" if t.get("isExperimental") else ver
-        cells.append(label)
+        if label not in [c[0] for c in columns]:
+            columns.append((label, (t.get("description") or "").replace("\n", "<br>")))
 
-    if not cells:
+    if len(columns) > 1:
+        columns = [c for c in columns if c[0] != ANY_VERSION]
+
+    if not columns:
         return ""
 
-    header = "| " + " | ".join(cells) + " |"
-    sep = "| " + " | ".join(":---:" for _ in cells) + " |"
+    header = "| " + " | ".join(label for label, _ in columns) + " |"
+    sep = "| " + " | ".join(":---:" for _ in columns) + " |"
     rows = [header, sep]
 
     # Optional description row — only rendered if at least one target has one
-    descs = [(t.get("description") or "").replace("\n", "<br>") for t in targets]
-    if any(descs):
-        rows.append("| " + " | ".join(descs) + " |")
+    if any(desc for _, desc in columns):
+        rows.append("| " + " | ".join(desc for _, desc in columns) + " |")
 
     return "\n".join(rows)
 

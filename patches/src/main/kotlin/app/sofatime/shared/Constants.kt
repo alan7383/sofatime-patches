@@ -10,27 +10,7 @@ object Constants {
         packageName = "com.theclashsoft.sofatime",
         apkFileType = ApkFileType.APKM,
         appIconColor = 0x1E1E2E,
-        targets = listOf(
-            AppTarget(version = "1.2.2"),
-            AppTarget(version = "1.2.3"),
-            AppTarget(version = "1.2.4"),
-            AppTarget(version = "1.2.5"),
-            AppTarget(version = "1.2.7"),
-            AppTarget(version = "1.2.8"),
-            AppTarget(version = "1.2.9"),
-            AppTarget(version = "1.2.10"),
-            AppTarget(version = "1.3.0"),
-            AppTarget(version = "1.3.1"),
-            AppTarget(version = "1.3.2"),
-            AppTarget(version = "1.3.3"),
-            AppTarget(version = "1.3.4"),
-            AppTarget(version = "1.3.5"),
-            AppTarget(version = "1.3.6"),
-            AppTarget(version = "1.3.7"),
-            AppTarget(version = "1.3.8"),
-            AppTarget(version = "1.4.0"),
-            AppTarget(version = "1.4.1"),
-            AppTarget(version = "1.4.2")
-        )
+        // version = null -> any version supported.
+        targets = listOf(AppTarget(version = null))
     )
 }
