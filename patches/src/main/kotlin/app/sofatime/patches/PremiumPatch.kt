@@ -1,6 +1,7 @@
 package app.sofatime.patches
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 
 import app.sofatime.shared.Constants.SOFATIME_COMPATIBILITY
@@ -14,20 +15,23 @@ val premiumPatch = bytecodePatch(
     compatibleWith(SOFATIME_COMPATIBILITY)
 
     execute {
-        isPremiumFingerprint.method.addInstructions(
-            0,
-            """
-                const/4 v0, 0x1
-                return v0
-            """
-        )
+        val entitlementClass = premiumEntitlementClassFingerprint.classDef
+        val targetMethods = entitlementClass.methods.filter {
+            it.returnType == "Z" && it.parameters.isEmpty()
+        }
 
-        isPremiumPurchasedFingerprint.method.addInstructions(
-            0,
-            """
-                const/4 v0, 0x1
-                return v0
-            """
-        )
+        if (targetMethods.isEmpty()) {
+            throw PatchException("No entitlement boolean methods found in ${entitlementClass.type}")
+        }
+
+        targetMethods.forEach { method ->
+            method.addInstructions(
+                0,
+                """
+                    const/4 v0, 0x1
+                    return v0
+                """
+            )
+        }
     }
 }
