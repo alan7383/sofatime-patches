@@ -1,3 +1,9 @@
+## [1.6.1](https://github.com/alan7383/sofatime-patches/compare/v1.6.0...v1.6.1) (2026-10-18)
+
+### 🐛 Bug Fixes
+
+* make premium entitlement patching compatible with all versions ([800b446](https://github.com/alan7383/sofatime-patches/commit/800b4461e62d949bed7e1ab081879c27f03b3c7e))
+
 ## [1.6.0](https://github.com/alan7383/sofatime-patches/compare/v1.5.3...v1.6.0) (2026-10-18)
 
 ### ✨ New Features
