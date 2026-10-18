@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/alan7383/sofatime-patches/compare/v1.5.3...v1.6.0) (2026-10-18)
+
+### ✨ New Features
+
+* target all SofaTime versions (Fixes [#21](https://github.com/alan7383/sofatime-patches/issues/21), Fixes [#22](https://github.com/alan7383/sofatime-patches/issues/22)) ([0beed42](https://github.com/alan7383/sofatime-patches/commit/0beed428993375d8a1689bb5d28542dff01773dc))
+
 ## [1.5.3](https://github.com/alan7383/sofatime-patches/compare/v1.5.2...v1.5.3) (2026-09-30)
 
 ### 🐛 Bug Fixes
